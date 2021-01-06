@@ -1,0 +1,33 @@
+# Riot JS Style
+# https://confluence.riotgames.com/display/tech/RFC+0788a+-+JS+Style+Guide
+
+# no-undef is disabled because of:
+# https://github.com/eslint/typescript-eslint-parser/issues/416
+# https://github.com/eslint/typescript-eslint-parser/issues/77
+# https://github.com/eslint/typescript-eslint-parser/issues/226
+env:
+  node: true
+  es6: true
+extends:
+  - "plugin:prettier/recommended"
+  - "prettier/@typescript-eslint"
+parser: "@typescript-eslint/parser"
+plugins:
+  - "prettier"
+  - "@typescript-eslint"
+rules:
+  no-unused-vars: off
+  no-undef: off
+  react/prop-types: 0
+  new-cap: off
+  no-console: error
+  dot-location:
+    - error
+    - property
+  indent: off
+  max-statements: off
+  complexity: off
+parserOptions:
+  sourceType: module
+  ecmaFeatures:
+    modules: true

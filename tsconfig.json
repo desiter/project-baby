@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "es2017",
+    "declaration": true,
+    "module": "commonjs",
+    "sourceMap": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "strict": true
+  },
+  "typedocOptions": {
+    "excludePrivate": true,
+    "mode": "file",
+    "module": "commonjs",
+    "readme": "README.md",
+    "out": "docs"
+  },
+  "include": ["packages/*/src/**/*"]
+}
